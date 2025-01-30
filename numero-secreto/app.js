@@ -1,4 +1,4 @@
-let numeroLimite = 10
+let numeroLimite = 100
 let tentativas = 1;
 let listaNumerosSorteados = [];
 let numeroAleatorio = gerarNumeroAleatorio();
@@ -20,7 +20,7 @@ function exibirTexto(tag, texto){
 function exibirMensagemInicial(){
     
     exibirTexto("h1", "jogo do numero secreto");
-    exibirTexto("p", "Escolha um numero de 1 a 10");
+    exibirTexto("p", `Escolha um numero de 1 a ${numeroLimite}`);
 }
 
 exibirMensagemInicial()
